@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Groups Suite">
+  <test name="GroupsTest" parallel="classes" thread-count="2">
+  <groups>
+  
+      <run>
+      
+      
+      <include name="smokeTest"></include>
+      <include name="functionalTest"></include>
+      </run>
+      
+ 
+  </groups>
+    <classes>
+      <class name="testng_groups.TestCase2"/>
+      <class name="testng_groups.TestCase1"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

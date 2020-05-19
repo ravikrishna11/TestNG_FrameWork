@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestNG Parallel EXECUTION]" parallel="methods">
+  <test thread-count="2" name="TestNG Parallel Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.test.ParallelTests">
+        <methods>
+          <include name="getGecko"/>
+        </methods>
+      </class> <!-- com.test.ParallelTests -->
+    </classes>
+  </test> <!-- TestNG Parallel Test(failed) -->
+</suite> <!-- Failed suite [TestNG Parallel EXECUTION] -->

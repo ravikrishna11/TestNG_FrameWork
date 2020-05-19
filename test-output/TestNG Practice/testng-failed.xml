@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Practice]" parallel="classes">
+  <test thread-count="5" name="TestNG Test(failed)" parallel="classes">
+    <parameter name="password" value="ravi0540"/>
+    <parameter name="phone" value="8500500753"/>
+    <classes>
+      <class name="com.test.ParameterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="FbLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.ParameterTest -->
+      <class name="com.test.GoogleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="googleLogoTest"/>
+          <include name="mailLinkTest"/>
+          <include name="test2"/>
+          <include name="tearDown"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.test.GoogleTest -->
+    </classes>
+  </test> <!-- TestNG Test(failed) -->
+</suite> <!-- Failed suite [TestNG Practice] -->
